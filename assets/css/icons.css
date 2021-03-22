@@ -24,6 +24,7 @@
     transform: scaleX(-1) rotate(-45deg) translate(-40px, -40px);
   }
 }
+/* micro animation for github icon */
 
 .github-icon {
   width: 55px;
@@ -48,15 +49,26 @@
   }
 }
 
+/* micro animation for discord icon */
+
 .discord-icon {
   width: 55px;
   fill: #000000;
   background-color: white;
-  border-radius: 35px;
-  border-width: 13px;
+  border-radius: 100px;
+  border-width: 9px;
   border-color: white;
   margin-left: 1rem;
 }
+.discord-icon:hover{
+  animation: spindiscord 1s infinite alternate;
+}
+@keyframes spindiscord{
+  from {transform: rotate(0deg);}
+  to {transform: rotate(359deg);}
+}
+
+/* micro animation for email icon */
 
 .email-icon {
   width: 55px;
@@ -66,4 +78,12 @@
   border-width: 7px;
   border-color: white;
   margin-left: 1rem;
+}
+ 
+.email-icon:hover{
+  animation: spinemail 1s infinite alternate;
+}
+@keyframes spinemail{
+  from {transform: rotate(360deg);}
+  to {transform: rotate(1deg);}
 }
